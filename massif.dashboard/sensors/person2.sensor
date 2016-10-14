@@ -1,0 +1,5 @@
+type = person
+id = [88:0f:10:f7:4b:51]
+value = true
+online = true
+location = living

@@ -1,0 +1,63 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add New Service Instance</h2> <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content style="max-width:800px;max-height:810px; ">
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="General">
+                    <h1 class="md-display-2">General Service Information</h1>
+                    <md-content class="md-padding">
+                        <h4>Service Name: <input type="text" name="serviceName" ng-model="ctrl.parent.services.newService.name" required></h4>
+                        <h4>Service Description: <textarea rows="4" cols="50" ng-model="ctrl.parent.services.newService.description">Add Description..</textarea></h4> </md-content>
+                </md-tab>
+                <md-tab label="Input">
+                    <h1 class="md-display-2">Filter Rules</h1>
+                    <md-content class="md-padding">
+                        <div ng-repeat="newFilter in ctrl.parent.services.newService.newFilters">
+                            <h4>Class Name: <input tyle="font-size: 17pt;" type="text" name="className" ng-model="newFilter.name"></h4>
+                            <h4>Equivalent To:</h4>
+                            <textarea style="font-size: 17pt;" rows="4" cols="50" ng-model="newFilter.input">Add Filter...</textarea>
+                        </div>
+                        <button ng-click="ctrl.parent.addNewFilter(newFilter)">Add Additional Input Filter</button>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Queries">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Add Queries</h1>
+                        <p>This tab allows to add one are more SPARQL-queries to define the logic of your newly created service.</p>
+                        <div ng-repeat="newQuery in ctrl.parent.services.newService.newQueries">
+                            <textarea style="font-size: 16pt;" rows="15" type="text" cols="60" ng-model="newQuery.query">Add Query...</textarea>
+                        </div>
+                        <button ng-click="ctrl.parent.addNewQuery(newQuery)">Add Additional Query</button>
+                        </md-list>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Ontology">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Loaded Ontology</h1>
+                        <h4>Ontology IRI: <input type="text" name="serviceOntology" ng-model="ctrl.parent.services.newService.ontology"></h4> </md-content>
+                </md-tab>
+            </md-tabs>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button ng-click="ctrl.parent.addService()" target="_blank" md-autofocus> Add Service! </md-button> <span flex></span>
+            <md-button ng-click="ctrl.parent.hide()"> Close </md-button>
+            <!-- <md-button ng-click="answer('useful')" style="margin-right:20px;" >
+        Useful
+      </md-button>--></md-dialog-actions>
+    </form>
+</md-dialog>
+<!--<md-dialog>
+         <md-content>{{ctrl.parent.greeting}}, world !</md-content>
+         <div class="md-actions">
+            <md-button ng-click="ctrl.parent.dialogOpen=false;ctrl.parent.hideDialog()">
+             Close
+            </md-button>
+          </div>
+        </md-dialog>-->

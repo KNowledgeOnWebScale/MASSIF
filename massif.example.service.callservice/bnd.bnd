@@ -1,0 +1,10 @@
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn;version=5.0.0,\
+	massif.framework.api;version=latest,\
+	org.semanticweb.owl.owlapi,\
+	slf4j.api,\
+	massif.framework.dashboard.api;version=latest
+-dsannotations: *
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package: massif.example.service.callservice

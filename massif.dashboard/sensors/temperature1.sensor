@@ -1,0 +1,5 @@
+type = temperature
+id = 0121
+value = false
+online = true
+location = living

@@ -1,0 +1,5 @@
+type = button
+id = 012
+value = true
+online = true
+location = living

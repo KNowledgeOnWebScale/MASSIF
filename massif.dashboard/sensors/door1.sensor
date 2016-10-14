@@ -1,0 +1,5 @@
+type = contact
+id = 0127
+value = true
+online = true
+location = living

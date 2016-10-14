@@ -1,0 +1,26 @@
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn;version=5.0.0,\
+	javax.ws.rs.jsr311-api,\
+	javax.servlet,\
+	slf4j.api,\
+	massif.framework.api;version=latest,\
+	massif.framework.dashboard.api;version=latest,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	com.fasterxml.jackson.core.jackson-core,\
+	massif.parallelization.api;version=latest
+-testpath: \
+	${junit}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package: \
+	massif.dashboard,\
+	massif.dashboard.physicalsensors
+
+Include-Resource: sensors,web=web
+X-Web-Resource-Version: 1.0
+X-Web-Resource: /ui;web
+X-Web-Resource-Default-Page: index.html

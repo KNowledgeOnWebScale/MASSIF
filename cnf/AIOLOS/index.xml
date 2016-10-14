@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1448979572000" name="AIOLOSLocal" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="2fa835caa4325b239a517bb022d1fe9e65f2d33629f25f5b1be526982d618ed0"/>
+      <attribute name="url" value="be.iminds.aiolos.api/be.iminds.aiolos.api-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="98070"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.proxy.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.platform.exception"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.topology.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info,org.osgi.service.remoteserviceadmin"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.info"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.proxy.policy"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info,be.iminds.aiolos.proxy.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.monitor.node.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.platform.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info,be.iminds.aiolos.monitor.node.api,be.iminds.aiolos.monitor.service.api,be.iminds.aiolos.proxy.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.util.log"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="org.osgi.framework"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.monitor.service.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.deployment.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.resource"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="org.osgi.resource,org.osgi.service.repository"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.cloud.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="aiolos.topology.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.api"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=be.iminds.aiolos.info)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.monitor.node.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.monitor.service.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.proxy.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="compile-only"/>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.cloudmanager.jclouds"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="cab195cab498142abcc7615827bd9141f54be0437d98801e3560933e9468189e"/>
+      <attribute name="url" value="be.iminds.aiolos.cloudmanager.jclouds/be.iminds.aiolos.cloudmanager.jclouds-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="69568"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.cloudmanager.jclouds"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.cloudmanager.jclouds"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.cloud.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.cloudmanager.jclouds"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.cloud.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=17.0.0)(!(version&gt;=18.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.collect)(version&gt;=17.0.0)(!(version&gt;=18.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.io)(version&gt;=17.0.0)(!(version&gt;=18.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.inject)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.apis)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.compute)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.compute.domain)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.compute.options)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.compute.predicates)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.domain)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.io)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.io.payloads)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.scriptbuilder)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.scriptbuilder.domain)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.scriptbuilder.statements.login)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.ssh)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jclouds.sshj.config)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.cloudmanager.local"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="d0d7fa155ca0c4d809f86b92fdb6796ea59da0242793939aa99b431a765f3dbc"/>
+      <attribute name="url" value="be.iminds.aiolos.cloudmanager.local/be.iminds.aiolos.cloudmanager.local-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="47432"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.cloudmanager.local"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.cloudmanager.local"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.cloud.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.cloudmanager.local"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.cloud.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.deploymentmanager"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="453e71082f434dbba601b73f0100cc6989a41b009c1569dadabd52040ee017df"/>
+      <attribute name="url" value="be.iminds.aiolos.deploymentmanager/be.iminds.aiolos.deploymentmanager-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="68973"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.deploymentmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.deploymentmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.deployment.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.deploymentmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.info"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.deploymentmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.resource"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.deploymentmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="org.osgi.resource,org.osgi.service.repository"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.deployment.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.info)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.resource)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.wiring)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.resolver)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.felix.shell)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.discovery"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="9e93eaae28e953974701129f3bc020c3dad1484d49b51e72bd9226b428212589"/>
+      <attribute name="url" value="be.iminds.aiolos.discovery/be.iminds.aiolos.discovery-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="29103"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.discovery"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.discovery"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.info)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.topology.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=ch.ethz.iks.slp)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.nodemonitor"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="53cfe7c496797a7ce0e540c1b9aacfc7d677dbffa49fc31e67e87f52828728b7"/>
+      <attribute name="url" value="be.iminds.aiolos.nodemonitor/be.iminds.aiolos.nodemonitor-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="27799"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.nodemonitor"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.nodemonitor"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.monitor.node.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.nodemonitor"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.monitor.node.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.platformmanager"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="e1278243d9beda09a450664c1409f7bb40ad136ebc1b53b8d8ee5e389a8354b4"/>
+      <attribute name="url" value="be.iminds.aiolos.platformmanager/be.iminds.aiolos.platformmanager-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="66216"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.platformmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.platformmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.platform.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.platformmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info,be.iminds.aiolos.monitor.node.api,be.iminds.aiolos.monitor.service.api,be.iminds.aiolos.proxy.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.platform.exception"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.platformmanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.cloud.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.deployment.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.info)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.monitor.node.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.monitor.service.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.platform.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.platform.exception)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.proxy.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.topology.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.felix.shell)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.proxymanager"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="bbcbf7ae07fbb199adac9e273d94d37f7e0a83dd45dfa3c5dc33d0f204cecf44"/>
+      <attribute name="url" value="be.iminds.aiolos.proxymanager/be.iminds.aiolos.proxymanager-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="91856"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.proxymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.proxymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.info"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.proxymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.proxy.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.proxymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.proxy.policy"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.proxymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info,be.iminds.aiolos.proxy.api"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.info)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.proxy.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.proxy.policy)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.hooks.service)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.felix.shell)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.remoteserviceadmin"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="de75693748078d6ce3191b4060ade987ffbb8e17d63b8d6b529a55a8b61ccea1"/>
+      <attribute name="url" value="be.iminds.aiolos.remoteserviceadmin/be.iminds.aiolos.remoteserviceadmin-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="215219"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.remoteserviceadmin"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.remoteserviceadmin"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.rsa.exception"/>
+      <attribute name="version" type="Version" value="0.5.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.remoteserviceadmin"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.osgi.service.remoteserviceadmin"/>
+      <attribute name="version" type="Version" value="1.0.1"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.remoteserviceadmin"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="org.osgi.framework"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.osgi.service.remoteserviceadmin.RemoteServiceAdmin"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.esotericsoftware.kryo)(version&gt;=2.23.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.esotericsoftware.kryo.io)(version&gt;=2.23.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.esotericsoftware.kryo.serializers)(version&gt;=2.23.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=de.javakaffee.kryoserializers)(version&gt;=0.23.0)(!(version&gt;=1.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.objenesis.strategy)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.rsa.exception)(version&gt;=0.5.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.kxml2.io)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.wiring)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.felix.shell)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.repository.http"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="4b0a5cff0291b0effa213583323a85463551cb46f2d1a63e7b801891a597734b"/>
+      <attribute name="url" value="be.iminds.aiolos.repository.http/be.iminds.aiolos.repository.http-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="48683"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.repository.http"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.repository.http"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.resource"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.repository.http"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="org.osgi.resource,org.osgi.service.repository"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.osgi.service.repository"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.repository.http"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="org.osgi.resource"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.osgi.service.repository.Repository"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.resource)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.kxml2.io)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.felix.shell)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.servicemonitor"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="9d195ee66e9687e3cd4de13a3440173c96d995a1c2f5ddd2b3a0968ca05cefba"/>
+      <attribute name="url" value="be.iminds.aiolos.servicemonitor/be.iminds.aiolos.servicemonitor-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="65194"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.servicemonitor"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.servicemonitor"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.monitor.service.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.servicemonitor"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.info)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.monitor.service.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.proxy.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.topologymanager"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="a964e91cdaecffc93ea52bf7712540f1090376a72e5e8a3452ad56a400c47eba"/>
+      <attribute name="url" value="be.iminds.aiolos.topologymanager/be.iminds.aiolos.topologymanager-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="71003"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.topologymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.topologymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.info"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.topologymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="be.iminds.aiolos.topology.api"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+      <attribute name="bundle-symbolic-name" value="be.iminds.aiolos.topologymanager"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+      <directive name="uses" value="be.iminds.aiolos.info,org.osgi.service.remoteserviceadmin"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.deployment.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.info)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.topology.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.hooks.service)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="be.iminds.aiolos.userinterface"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="e1562552d1d632a2a261d294c157e5a27f83661c861024021a3d1b30f14d560b"/>
+      <attribute name="url" value="be.iminds.aiolos.userinterface/be.iminds.aiolos.userinterface-0.6.0.jar"/>
+      <attribute name="size" type="Long" value="62276"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="be.iminds.aiolos.userinterface"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="be.iminds.aiolos.userinterface"/>
+      <attribute name="bundle-version" type="Version" value="0.6.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.6.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.cloud.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.info)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.platform.api)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=be.iminds.aiolos.resource)(version&gt;=0.6.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.io)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.json.simple)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.esotericsoftware.kryo"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="5a19eadb21352d6b2214084a1a86296f946acf2129bfd6a9710699c7dcacbf4f"/>
+      <attribute name="url" value="com.esotericsoftware.kryo/com.esotericsoftware.kryo-2.23.0.jar"/>
+      <attribute name="size" type="Long" value="457282"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.kryo"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo.factories,com.esotericsoftware.kryo.io,com.esotericsoftware.kryo.util,org.objenesis.instantiator,org.objenesis.strategy"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.kryo.factories"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.kryo.io"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.kryo.serializers"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo,com.esotericsoftware.kryo.io"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.kryo.util"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo,com.esotericsoftware.kryo.io,sun.misc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.minlog"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.reflectasm"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.esotericsoftware.reflectasm.shaded.org.objectweb.asm"/>
+      <attribute name="version" type="Version" value="2.23.0"/>
+      <attribute name="bundle-symbolic-name" value="com.esotericsoftware.kryo"/>
+      <attribute name="bundle-version" type="Version" value="2.23.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.objenesis.instantiator)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.objenesis.strategy)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.reflect)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.googlecode.json-simple"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="108045c9675ebf6d6ec4d8dcc331693f9b944ac7c87de52dccff2c55e8dfa6f1"/>
+      <attribute name="url" value="com.googlecode.json-simple/com.googlecode.json-simple-1.1.1.jar"/>
+      <attribute name="size" type="Long" value="23737"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.googlecode.json-simple"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.googlecode.json-simple"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.json.simple"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+      <attribute name="bundle-symbolic-name" value="com.googlecode.json-simple"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+      <directive name="uses" value="org.json.simple.parser"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.json.simple.parser"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+      <attribute name="bundle-symbolic-name" value="com.googlecode.json-simple"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+      <directive name="uses" value="org.json.simple"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="de.javakaffee.kryo-serializers"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.23.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="b046e0c8741852e2a2f0e73b8fe5fedd046211c7b4231d821c8e07fc18db6497"/>
+      <attribute name="url" value="de.javakaffee.kryo-serializers/de.javakaffee.kryo-serializers-0.23.0.jar"/>
+      <attribute name="size" type="Long" value="81122"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="de.javakaffee.kryo-serializers"/>
+      <attribute name="bundle-version" type="Version" value="0.23.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="de.javakaffee.kryo-serializers"/>
+      <attribute name="bundle-version" type="Version" value="0.23.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="de.javakaffee.kryoserializers"/>
+      <attribute name="version" type="Version" value="0.23.0"/>
+      <attribute name="bundle-symbolic-name" value="de.javakaffee.kryo-serializers"/>
+      <attribute name="bundle-version" type="Version" value="0.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo.io,com.esotericsoftware.kryo,com.esotericsoftware.kryo.serializers,com.esotericsoftware.minlog,sun.reflect"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="de.javakaffee.kryoserializers.cglib"/>
+      <attribute name="version" type="Version" value="0.23.0"/>
+      <attribute name="bundle-symbolic-name" value="de.javakaffee.kryo-serializers"/>
+      <attribute name="bundle-version" type="Version" value="0.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo.io,net.sf.cglib.proxy,com.esotericsoftware.kryo"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="de.javakaffee.kryoserializers.jodatime"/>
+      <attribute name="version" type="Version" value="0.23.0"/>
+      <attribute name="bundle-symbolic-name" value="de.javakaffee.kryo-serializers"/>
+      <attribute name="bundle-version" type="Version" value="0.23.0"/>
+      <directive name="uses" value="org.joda.time.chrono,org.joda.time,com.esotericsoftware.kryo.io,com.esotericsoftware.kryo"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="de.javakaffee.kryoserializers.wicket"/>
+      <attribute name="version" type="Version" value="0.23.0"/>
+      <attribute name="bundle-symbolic-name" value="de.javakaffee.kryo-serializers"/>
+      <attribute name="bundle-version" type="Version" value="0.23.0"/>
+      <directive name="uses" value="com.esotericsoftware.kryo.io,com.esotericsoftware.minlog,org.apache.wicket.util.collections,com.esotericsoftware.kryo"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.esotericsoftware.kryo)(version&gt;=2.20.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.esotericsoftware.kryo.io)(version&gt;=2.20.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.esotericsoftware.kryo.serializers)(version&gt;=2.20.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.esotericsoftware.minlog)(version&gt;=2.20.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=net.sf.cglib.proxy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.wicket.util.collections)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.joda.time)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.joda.time.chrono)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.reflect)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="javax.ws.rs.jsr311-api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="ab1534b73b5fa055808e6598a5e73b599ccda28c3159c3c0908977809422ee4a"/>
+      <attribute name="url" value="javax.ws.rs.jsr311-api/javax.ws.rs.jsr311-api-1.1.1.jar"/>
+      <attribute name="size" type="Long" value="46367"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="javax.ws.rs.jsr311-api"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="javax.ws.rs.jsr311-api"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+      <attribute name="bundle-symbolic-name" value="javax.ws.rs.jsr311-api"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+      <directive name="uses" value="javax.ws.rs.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+      <attribute name="bundle-symbolic-name" value="javax.ws.rs.jsr311-api"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+      <directive name="uses" value="javax.ws.rs.core,javax.ws.rs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+      <attribute name="bundle-symbolic-name" value="javax.ws.rs.jsr311-api"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1"/>
+      <directive name="uses" value="javax.ws.rs.ext,javax.ws.rs"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="jslp"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.RC5"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="2f761b1bfa0d39e3d1004c35ea24520fff55367285426a1828c0e0b691af4580"/>
+      <attribute name="url" value="jslp/jslp-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="116545"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="jslp"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.RC5"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="jslp"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.RC5"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.slp"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="jslp"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.RC5"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.log)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="kxml"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="ecc0999aa281883455182cc9f4183325ad1e894151e24d6864045efd205c6223"/>
+      <attribute name="url" value="kxml/kxml-2.2.2.jar"/>
+      <attribute name="size" type="Long" value="75289"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.kxml2.io"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.kxml2.kdom"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.kxml.wap"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.kxml2.wap.wm"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.kxml2.wap.wml"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.kxml2.syncml"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.xmlpull.v1"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="kxml"/>
+      <attribute name="bundle-version" type="Version" value="2.2.2"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="objectprofiler"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="3b4b8efe94157068e9ccf1214480b9e174d0e88ad3474aa1fc09ddee1a6ee06c"/>
+      <attribute name="url" value="objectprofiler/objectprofiler-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="36648"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="objectprofiler"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="objectprofiler"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.vladium.utils"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="objectprofiler"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.objenesis"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="4014b7a6ad03e48aa695ccc8a2a7ba942a29e6fb11a100190a6e0ed19c92efcb"/>
+      <attribute name="url" value="org.objenesis/org.objenesis-2.1.0.jar"/>
+      <attribute name="size" type="Long" value="52872"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.instantiator.android"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis,org.objenesis.instantiator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.instantiator.basic"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis,org.objenesis.instantiator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.instantiator.gcj"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis,org.objenesis.instantiator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.instantiator.jrockit"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis,org.objenesis.instantiator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.instantiator"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.instantiator.perc"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis,org.objenesis.instantiator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.instantiator.sun"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis,org.objenesis.instantiator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis.instantiator,org.objenesis.strategy"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objenesis.strategy"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.objenesis"/>
+      <attribute name="bundle-version" type="Version" value="2.1.0"/>
+      <directive name="uses" value="org.objenesis.instantiator,org.objenesis,org.objenesis.instantiator.perc,org.objenesis.instantiator.android,org.objenesis.instantiator.basic,org.objenesis.instantiator.gcj,org.objenesis.instantiator.jrockit,org.objenesis.instantiator.sun"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=COM.jrockit.reflect)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=COM.newmonics.PercClassloader)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jrockit.vm)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.reflect)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=android.os)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+</repository>

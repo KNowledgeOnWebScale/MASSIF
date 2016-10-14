@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1453294012999" name="massif.logging.testing" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="massif.logging.testing"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.0.0.201601201246"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="824045c0a608d6e1cdf7ba5cd251e2dee8c88670827a990cd2169d24a23e6241"/>
+      <attribute name="url" value="generated/massif.logging.testing.jar"/>
+      <attribute name="size" type="Long" value="6894"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="massif.logging.testing"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201601201246"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="massif.logging.testing"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201601201246"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="massif.journal.api.JournalService"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="massif.journal.api.JournalService"/>
+      <directive name="uses" value="massif.journal.api"/>
+    </capability>
+    <capability namespace="bndtools.workspace">
+      <attribute name="bndtools.workspace" value="file:/C:/Users/pbonte/GitHub/EclipseWS/MASSIF"/>
+      <attribute name="project.path" value="/massif.logging.testing"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=massif.journal.api)(version&gt;=0.0.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+</repository>

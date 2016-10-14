@@ -1,0 +1,7 @@
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn;version=5.0.0
+Bundle-Version: 0.0.0.${tstamp}
+Export-Package: \
+	massif.kafka.api.listener,\
+	massif.kafka.api

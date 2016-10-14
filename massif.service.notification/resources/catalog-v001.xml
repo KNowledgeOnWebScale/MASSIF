@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://IBCNServices.github.io/Accio-Ontology/ontologies/DUL.owl" uri="http://ibcnservices.github.io/Accio-Ontology/ontologies/DUL.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1475760602236" name="http://IBCNServices.github.io/Accio-Ontology/iotdemo.owl" uri="iotdemo.owl"/>
+    </group>
+</catalog>

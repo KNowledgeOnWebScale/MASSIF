@@ -1,0 +1,5 @@
+type = lamp
+id = hue.3.3
+value = false
+online = true
+location = living

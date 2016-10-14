@@ -1,0 +1,48 @@
+<md-dialog aria-label="Profile info">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Adapt profile information</h2> <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content style="max-width:800px;max-height:810px; ">
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="Employee 1">
+                    <h1 class="md-display-2">Employee 1 Profile</h1>
+                    <md-content class="md-padding">
+                        <h4> Favorite color: <select ng-model="selectedColor" ng-options="x for x in ctrl.parent.colors"></select> </h4>
+                        <button ng-click="ctrl.parent.newColor('1',selectedColor)">Update Profile</button>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Employee 2">
+                    <h1 class="md-display-2">Employee 2 Profile</h1>
+                    <md-content class="md-padding">
+                        <h4> Favorite color: <select ng-model="selectedColor2" ng-options="x for x in ctrl.parent.colors"></select> </h4>
+                        <button ng-click="ctrl.parent.newColor('2',selectedColor2)">Update Profile</button>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Visitor">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Visitor Profile</h1>
+                        <p>Currently nothing to show here.</p>
+                    </md-content>
+                </md-tab>
+                <md-dialog-actions layout="row">
+                    <md-button ng-click="ctrl.parent.addService()" target="_blank" md-autofocus> Add Service! </md-button> <span flex></span>
+                    <md-button ng-click="ctrl.parent.hide()"> Close </md-button>
+                    <!-- <md-button ng-click="answer('useful')" style="margin-right:20px;" >
+        Useful
+      </md-button>--></md-dialog-actions>
+    </form>
+</md-dialog>
+<!--<md-dialog>
+         <md-content>{{ctrl.parent.greeting}}, world !</md-content>
+         <div class="md-actions">
+            <md-button ng-click="ctrl.parent.dialogOpen=false;ctrl.parent.hideDialog()">
+             Close
+            </md-button>
+          </div>
+        </md-dialog>-->

@@ -1,0 +1,16 @@
+-buildpath: \
+	osgi.cmpn;version=5.0,\
+	osgi.core;version=5.0,\
+	slf4j.api,\
+	osgi.annotation,\
+	org.semanticweb.owl.owlapi
+
+-testpath: \
+	${junit}
+
+
+Bundle-Version: 0.0.0.${tstamp}
+
+Export-Package: \
+	massif.framework.dashboard.api,\
+	massif.framework.dashboard.api.util

@@ -1,0 +1,5 @@
+type = window
+id = w1
+value = false
+online = true
+location = living

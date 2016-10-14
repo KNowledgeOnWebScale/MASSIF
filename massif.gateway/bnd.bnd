@@ -1,0 +1,10 @@
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn;version=5.0.0,\
+	slf4j.api,\
+	massif.framework.api;version=latest,\
+	javax.ws.rs.jsr311-api,\
+	javax.servlet
+Bundle-Version: 0.0.1.${tstamp}
+Export-Package: massif.gateway
+-dsannotations: *

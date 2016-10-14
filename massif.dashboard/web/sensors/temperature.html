@@ -1,0 +1,36 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>{{ctrl.parent.sensors.activeSensor.sensorType}}</h2> <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content style="max-width:800px;max-height:810px; ">
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="Info">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Sensor Summary</h1>
+                        <h4>Sensor value: <span> {{ctrl.parent.sensors.activeSensor.value}} </span></h4>
+                        <h4>Virtual: <span> {{ctrl.parent.sensors.activeSensor.virtual}} </span></h4>
+                        <div ng-if="ctrl.parent.sensors.activeSensor.virtual == true">
+                            <!-- code to render a large video block-->
+                            <p>frue</p>
+                        </div>
+                        <div ng-if="ctrl.parent.sensors.activeSensor.virtual != true">
+                            <!-- code to render a large video block-->
+                            <p>false</p>
+                        </div>
+                </md-tab>
+                <md-tab label="Adapt">
+                    <md-content class="md-padding"> </md-content>
+                </md-tab>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button href="https://github.ugent.be/psbonte/MASSIF" target="_blank" md-autofocus> More info </md-button> <span flex></span>
+            <md-button ng-click="ctrl.parent.hide()"> Close </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

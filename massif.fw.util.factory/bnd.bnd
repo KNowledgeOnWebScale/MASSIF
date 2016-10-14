@@ -1,0 +1,7 @@
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn;version=5.0.0,\
+	massif.framework.api;version=latest
+-dsannotations: *
+Bundle-Version: 0.0.0.${tstamp}
+Export-Package: massif.fw.util.factory

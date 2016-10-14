@@ -1,0 +1,74 @@
+#Visitor service:
+name: http://IBCNServices.github.io/Accio-Ontology/SSNiot#RFIDFilter
+input: <http://IBCNServices.github.io/Accio-Ontology/SSNiot#RFIDTagObservation>
+
+#ontology
+http://IBCNServices.github.io/Accio-Ontology/demo/sensors.owl
+
+#Visitor turn on light
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ssn: <http://IBCNServices.github.io/Accio-Ontology/ontologies/ssn#>
+PREFIX dul: <http://IBCNServices.github.io/Accio-Ontology/ontologies/DUL.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX iot: <http://IBCNServices.github.io/Accio-Ontology/SSNiot#>
+PREFIX upper: <http://IBCNServices.github.io/Accio-Ontology/UpperAccio.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX demo: <http://IBCNServices.github.io/Accio-Ontology/iotdemo.owl#>
+PREFIX ical: <http://www.w3.org/2002/12/cal/ical#>
+
+CONSTRUCT{
+	iot:actionligth rdf:type demo:TurnOnLightAction.
+	iot:actionligth iot:isActionOf iot:light.
+	iot:light rdf:type iot:LightSensor.
+	iot:light demo:hasID ?id.
+	iot:actionligth rdf:type dul:Action.
+}
+WHERE {	?observation rdf:type iot:RFIDTagObservation. ?observation ssn:observationResult ?obresult. 
+	?obresult ssn:hasValue ?obvalue. ?obvalue dul:hasDataValue ?dataVal. 
+	?obvalue dul:hasParameterDataValue "true"^^xsd:boolean. 
+	?meeting rdf:type ical:Vevent.					
+	?meeting ical:attendee ?person.
+	?meeting dul:hasLocation ?location.
+	?light rdf:type iot:LightSensor	.
+	?light dul:hasLocation ?location.
+	?light upper:hasID ?id.
+	?person rdf:type foaf:Person. 
+	?person upper:hasId ?idPers. ?idPers upper:hasID ?idvalue. 					
+	FILTER(?idvalue = ?dataVal )				
+}
+#Visitor turn of light
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ssn: <http://IBCNServices.github.io/Accio-Ontology/ontologies/ssn#>
+PREFIX dul: <http://IBCNServices.github.io/Accio-Ontology/ontologies/DUL.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX iot: <http://IBCNServices.github.io/Accio-Ontology/SSNiot#>
+PREFIX upper: <http://IBCNServices.github.io/Accio-Ontology/UpperAccio.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX demo: <http://IBCNServices.github.io/Accio-Ontology/iotdemo.owl#>
+PREFIX ical: <http://www.w3.org/2002/12/cal/ical#>
+
+CONSTRUCT{	
+	iot:actionligth rdf:type demo:TurnOffLightAction.
+	iot:actionligth iot:isActionOf iot:light.
+	iot:light rdf:type iot:LightSensor.
+	iot:light demo:hasID ?id.
+	iot:actionligth rdf:type dul:Action.
+}
+WHERE {	?observation rdf:type iot:RFIDTagObservation. 
+	?observation ssn:observationResult ?obresult. 
+	?obresult ssn:hasValue ?obvalue. ?obvalue dul:hasDataValue ?dataVal. 
+	?obvalue dul:hasParameterDataValue "false"^^xsd:boolean. 
+	?meeting rdf:type ical:Vevent.					
+	?meeting ical:attendee ?person.
+	?meeting dul:hasLocation ?location.
+	?light rdf:type iot:LightSensor	.
+	?light dul:hasLocation ?location.
+	?light upper:hasID ?id.
+	?person rdf:type foaf:Person. 
+	?person upper:hasId ?idPers. ?idPers upper:hasID ?idvalue. 					
+	FILTER(?idvalue = ?dataVal )				
+}

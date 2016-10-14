@@ -1,0 +1,9 @@
+name=[Employee Service,test]
+description=Employee Service
+input=<http://IBCNServices.github.io/Accio-Ontology/ontologies/ssn#Observation> and (<http://IBCNServices.github.io/Accio-Ontology/ontologies/ssn#observedProperty> some <http://IBCNServices.github.io/Accio-Ontology/SSNiot#DoorWindowContact>)
+input.2=<http://IBCNServices.github.io/Accio-Ontology/ontologies/ssn#Observation> and (<http://IBCNServices.github.io/Accio-Ontology/ontologies/ssn#observedProperty> some <http://IBCNServices.github.io/Accio-Ontology/SSNiot#DoorWindowContact>)
+inputName=http://www.semanticweb.org/pbonte/ontologies/2016/6/untitled-ontology-24#TestClass
+inputName.2=http://www.semanticweb.org/pbonte/ontologies/2016/6/untitled-ontology-24#TestClass2
+ontology=http://IBCNServices.github.io/Accio-Ontology/SSNiot.owl
+query=PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nCONSTRUCT{<http://IBCNServices.github.io/Accio-Ontology/SSNiot#Notification> <http://IBCNServices.github.io/Accio-Ontology/SSNiot#hasContext> <http://IBCNServices.github.io/Accio-Ontology/SSNiot#TestObservation>}\nWHERE { ?subject ?property ?object }
+query.2=PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nCONSTRUCT{<http://IBCNServices.github.io/Accio-Ontology/SSNiot#Notification> <http://IBCNServices.github.io/Accio-Ontology/SSNiot#hasContext> <http://IBCNServices.github.io/Accio-Ontology/SSNiot#TestObservation>}\nWHERE { ?subject ?property ?object }

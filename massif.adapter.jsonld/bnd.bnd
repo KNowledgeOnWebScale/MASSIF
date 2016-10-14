@@ -1,0 +1,20 @@
+-buildpath: \
+	osgi.core;version=5.0,\
+	osgi.cmpn;version=5.0.0,\
+	javax.servlet,\
+	slf4j.api,\
+	massif.framework.api;version=latest,\
+	org.semanticweb.owl.owlapi;version>=5.0,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	massif.framework.dashboard.api;version=latest
+	
+	
+-testpath: \
+	${junit}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package: massif.adapter.jsonld

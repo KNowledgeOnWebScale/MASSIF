@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?type ?id ?color
+WHERE { ?action rdf:type <http://IBCNServices.github.io/Accio-Ontology/ontologies/DUL.owl#Action>.
+		?action rdf:type ?type.
+		?action <http://IBCNServices.github.io/Accio-Ontology/SSNiot#isActionOf> ?sensor.
+		?sensor <http://IBCNServices.github.io/Accio-Ontology/iotdemo.owl#hasID> ?id.
+		OPTIONAL{?sensor <http://IBCNServices.github.io/Accio-Ontology/iotdemo.owl#hasColor> ?color.}
+		FILTER NOT EXISTS { ?action rdf:type ?type2. ?type2 rdfs:subClassOf ?type. FILTER(?type != ?type2) }.
+		FILTER(?type != owl:NamedIndividual)
+}

@@ -1,0 +1,113 @@
+
+<testsuite name='test.massif.scb' tests='2' time='0.139' failures='0' skipped='0' target='reference:file:/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.scb/generated/massif.scb.jar' timestamp='2016-07-12T10:50:42' hostname='pbonte-Latitude-E5550' framework='org.apache.felix.framework [0]' errors='1' framework-version='5.2.0'>
+  <properties>
+    <property name='java.vendor' value='Oracle Corporation'/>
+    <property name='org.osgi.service.http.port' value='8081'/>
+    <property name='sun.java.launcher' value='SUN_STANDARD'/>
+    <property name='sun.management.compiler' value='HotSpot 64-Bit Tiered Compilers'/>
+    <property name='os.name' value='Linux'/>
+    <property name='sun.boot.class.path' value='/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes'/>
+    <property name='tester.continuous' value='true'/>
+    <property name='sun.desktop' value='gnome'/>
+    <property name='java.vm.specification.vendor' value='Oracle Corporation'/>
+    <property name='java.runtime.version' value='1.8.0_91-b14'/>
+    <property name='launch.services' value='true'/>
+    <property name='launch.notificationPort' value='44317'/>
+    <property name='launcher.properties' value='/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/distribution/generated/launch7499888069177269243.properties'/>
+    <property name='user.name' value='pbonte'/>
+    <property name='launch.bundles' value='/home/pbonte/.bnd/cache/http%3A%2F%2Faiolos.intec.ugent.be%2Frepositories%2Fbe.iminds.aiolos%2Faopalliance/aopalliance-1.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/ch.qos.logback.classic/ch.qos.logback.classic-1.1.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/ch.qos.logback.core/ch.qos.logback.core-1.1.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.diffplug.osgi.extension.sun.misc/com.diffplug.osgi.extension.sun.misc-0.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.diffplug.osgi.extension.sun.reflect/com.diffplug.osgi.extension.sun.reflect-0.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.fasterxml.jackson.core.jackson-annotations/com.fasterxml.jackson.core.jackson-annotations-2.3.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.fasterxml.jackson.core.jackson-core/com.fasterxml.jackson.core.jackson-core-2.3.1.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.fasterxml.jackson.core.jackson-databind/com.fasterxml.jackson.core.jackson-databind-2.3.1.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.fasterxml.jackson.jaxrs.jackson-jaxrs-base/com.fasterxml.jackson.jaxrs.jackson-jaxrs-base-2.3.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider/com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider-2.3.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.google.guava/com.google.guava-19.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.google.inject/com.google.inject-4.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.google.inject.assistedinject/com.google.inject.assistedinject-4.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/com.google.inject.multibindings/com.google.inject.multibindings-4.0.0.jar,/home/pbonte/.bnd/cache/http%3A%2F%2Faiolos.intec.ugent.be%2Frepositories%2Fbe.iminds.aiolos%2Fjavax.inject/javax.inject-1.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/Pellet/jcl.over.slf4j/jcl.over.slf4j-1.6.4.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.adapter.jsonld/generated/massif.adapter.jsonld.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.dashboard/generated/massif.dashboard.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.example.ca.call/generated/massif.example.ca.call.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.example.service.callservice/generated/massif.example.service.callservice.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.framework.api/generated/massif.framework.api.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.framework.dashboard.api/generated/massif.framework.dashboard.api.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.gateway/generated/massif.gateway.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.generic.service/generated/massif.generic.service.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.matchingservice/generated/massif.matchingservice.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.parallelization.api/generated/massif.parallelization.api.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.parallelization.localconfig/generated/massif.parallelization.localconfig.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/massif.scb/generated/massif.scb.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoAmdatu/org.amdatu.web.resourcehandler/org.amdatu.web.resourcehandler-1.0.8.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/org.amdatu.web.rest.jaxrs/org.amdatu.web.rest.jaxrs-1.0.8.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/org.amdatu.web.rest.wink/org.amdatu.web.rest.wink-2.0.3.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/org.apache.commons.codec/org.apache.commons.codec-1.7.0.jar,/home/pbonte/.bnd/cache/http%3A%2F%2Faiolos.intec.ugent.be%2Frepositories%2Fbe.iminds.aiolos%2Forg.apache.commons.io/org.apache.commons.io-2.4.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.configadmin/org.apache.felix.configadmin-1.8.8.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.dependencymanager/org.apache.felix.dependencymanager-4.1.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.eventadmin/org.apache.felix.eventadmin-1.4.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.fileinstall/org.apache.felix.fileinstall-3.5.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.gogo.command/org.apache.felix.gogo.command-0.14.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.gogo.runtime/org.apache.felix.gogo.runtime-0.16.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.gogo.shell/org.apache.felix.gogo.shell-0.10.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.http.api/org.apache.felix.http.api-2.3.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.http.jetty/org.apache.felix.http.jetty-3.0.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.http.servlet-api/org.apache.felix.http.servlet-api-1.1.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.http.whiteboard/org.apache.felix.http.whiteboard-2.3.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.log/org.apache.felix.log-1.0.1.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.metatype/org.apache.felix.metatype-1.1.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.scr/org.apache.felix.scr-1.8.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/repoFelix/org.apache.felix.webconsole/org.apache.felix.webconsole-4.2.10.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/org.semanticweb.hermit/org.semanticweb.hermit-1.3.8.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/org.semanticweb.owl.owlapi/org.semanticweb.owl.owlapi-5.0.2.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/osgi.cmpn/osgi.cmpn-5.0.0.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/localrepo/slf4j.api/slf4j.api-1.7.12.jar,/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/buildrepo/biz.aQute.junit/biz.aQute.junit-latest.jar'/>
+    <property name='tester.trace' value='true'/>
+    <property name='user.language' value='en'/>
+    <property name='sun.boot.library.path' value='/usr/lib/jvm/java-8-oracle/jre/lib/amd64'/>
+    <property name='java.version' value='1.8.0_91'/>
+    <property name='user.timezone' value='Europe/Brussels'/>
+    <property name='tester.dir' value='testdir'/>
+    <property name='sun.arch.data.model' value='64'/>
+    <property name='java.endorsed.dirs' value='/usr/lib/jvm/java-8-oracle/jre/lib/endorsed'/>
+    <property name='sun.cpu.isalist' value=''/>
+    <property name='sun.jnu.encoding' value='UTF-8'/>
+    <property name='file.encoding.pkg' value='sun.io'/>
+    <property name='launch.noreferences' value='false'/>
+    <property name='file.separator' value='/'/>
+    <property name='java.specification.name' value='Java Platform API Specification'/>
+    <property name='java.class.version' value='52.0'/>
+    <property name='user.country' value='US'/>
+    <property name='java.home' value='/usr/lib/jvm/java-8-oracle/jre'/>
+    <property name='java.vm.info' value='mixed mode'/>
+    <property name='os.version' value='4.4.0-28-generic'/>
+    <property name='logback.configurationFile' value='file:logback.xml'/>
+    <property name='path.separator' value=':'/>
+    <property name='java.vm.version' value='25.91-b14'/>
+    <property name='java.awt.printerjob' value='sun.print.PSPrinterJob'/>
+    <property name='sun.io.unicode.encoding' value='UnicodeLittle'/>
+    <property name='awt.toolkit' value='sun.awt.X11.XToolkit'/>
+    <property name='user.home' value='/home/pbonte'/>
+    <property name='java.specification.vendor' value='Oracle Corporation'/>
+    <property name='java.library.path' value='/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib'/>
+    <property name='java.vendor.url' value='http://java.oracle.com/'/>
+    <property name='java.vm.vendor' value='Oracle Corporation'/>
+    <property name='java.runtime.name' value='Java(TM) SE Runtime Environment'/>
+    <property name='sun.java.command' value='aQute.launcher.Launcher'/>
+    <property name='java.class.path' value='/home/pbonte/.bnd/cache/http%3A%2F%2Frepository.amdatu.org%2Fdependencies%2Forg.apache.felix.framework/org.apache.felix.framework-5.2.0.jar:/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/cnf/buildrepo/biz.aQute.launcher/biz.aQute.launcher-latest.jar'/>
+    <property name='launch.system.capabilities' value='osgi.native;osgi.native.osname:List&lt;String&gt;=Linux;osgi.native.osversion:Version="4.4.0.-28-generic";osgi.native.processor:List&lt;String&gt;="x86-64,amd64,em64t,x86_64"'/>
+    <property name='launch.name' value='distribution'/>
+    <property name='jetty.version' value='9.2.9.v20150224'/>
+    <property name='launch.timeout' value='0'/>
+    <property name='launch.storage.dir' value='/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/distribution/generated/fw'/>
+    <property name='launch.keep' value='false'/>
+    <property name='java.vm.specification.name' value='Java Virtual Machine Specification'/>
+    <property name='java.vm.specification.version' value='1.8'/>
+    <property name='sun.cpu.endian' value='little'/>
+    <property name='sun.os.patch.level' value='unknown'/>
+    <property name='java.io.tmpdir' value='/tmp'/>
+    <property name='java.vendor.url.bug' value='http://bugreport.sun.com/bugreport/'/>
+    <property name='os.arch' value='amd64'/>
+    <property name='java.awt.graphicsenv' value='sun.awt.X11GraphicsEnvironment'/>
+    <property name='java.ext.dirs' value='/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext'/>
+    <property name='user.dir' value='/media/pbonte/OSDisk/Users/Administrator/GitHub/MASSIF/distribution'/>
+    <property name='launch.trace' value='false'/>
+    <property name='line.separator' value='
+'/>
+    <property name='java.vm.name' value='Java HotSpot(TM) 64-Bit Server VM'/>
+    <property name='launch.embedded' value='false'/>
+    <property name='launch.activators' value=''/>
+    <property name='file.encoding' value='UTF-8'/>
+    <property name='launch.system.packages' value='org.osgi.framework;version="1.8",org.osgi.framework.dto;version="1.8";uses:="org.osgi.dto",org.osgi.framework.hooks.bundle;version="1.1";uses:="org.osgi.framework",org.osgi.framework.hooks.resolver;version="1.0";uses:="org.osgi.framework.wiring",org.osgi.framework.hooks.service;version="1.1";uses:="org.osgi.framework",org.osgi.framework.hooks.weaving;version="1.1";uses:="org.osgi.framework.wiring",org.osgi.framework.launch;version="1.2";uses:="org.osgi.framework",org.osgi.framework.namespace;version="1.1";uses:="org.osgi.resource",org.osgi.framework.startlevel;version="1.0";uses:="org.osgi.framework",org.osgi.framework.startlevel.dto;version="1.0";uses:="org.osgi.dto",org.osgi.framework.wiring;version="1.2";uses:="org.osgi.framework,org.osgi.resource",org.osgi.framework.wiring.dto;version="1.2";uses:="org.osgi.dto,org.osgi.resource.dto",org.osgi.resource;version="1.0",org.osgi.resource.dto;version="1.0";uses:="org.osgi.dto",org.osgi.service.packageadmin;version="1.2";uses:="org.osgi.framework",org.osgi.service.startlevel;version="1.1";uses:="org.osgi.framework",org.osgi.service.url;version="1.0",org.osgi.service.resolver;version="1.0";uses:="org.osgi.resource",org.osgi.util.tracker;version="1.5.1";uses:="org.osgi.framework",org.osgi.dto;version="1.0"'/>
+    <property name='java.specification.version' value='1.8'/>
+  </properties>
+  <testcase name='test' time='0.104' classname='massif.scb.OWLCentralizedSemanticBusTest'>
+    <error type='org.semanticweb.owlapi.model.OWLOntologyFactoryNotFoundException'><![CDATA[org.semanticweb.owlapi.model.OWLOntologyFactoryNotFoundException: Could not find an appropriate factory to load ontology from ontology document: <iot>
+ at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:939)
+ at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:859)
+ at massif.framework.util.owl.OntologyCache.getOWLOntology(OntologyCache.java:102)
+ at massif.scb.OWLCentralizedSemanticBus.startSCB(OWLCentralizedSemanticBus.java:123)
+ at massif.scb.OWLCentralizedSemanticBus.<init>(OWLCentralizedSemanticBus.java:113)
+ at massif.scb.OWLCentralizedSemanticBusTest.test(OWLCentralizedSemanticBusTest.java:13)
+ at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ at java.lang.reflect.Method.invoke(Method.java:498)
+ at junit.framework.TestCase.runTest(TestCase.java:176)
+ at junit.framework.TestCase.runBare(TestCase.java:141)
+ at junit.framework.TestResult$1.protect(TestResult.java:122)
+ at junit.framework.TestResult.runProtected(TestResult.java:142)
+ at junit.framework.TestResult.run(TestResult.java:125)
+ at junit.framework.TestCase.run(TestCase.java:129)
+ at junit.framework.TestSuite.runTest(TestSuite.java:255)
+ at junit.framework.TestSuite.run(TestSuite.java:250)
+ at junit.framework.TestSuite.runTest(TestSuite.java:255)
+ at junit.framework.TestSuite.run(TestSuite.java:250)
+ at aQute.junit.Activator.test(Activator.java:325)
+ at aQute.junit.Activator.automatic(Activator.java:208)
+ at aQute.junit.Activator.run(Activator.java:142)
+ at aQute.launcher.Launcher$5.call(Launcher.java:1198)
+ at aQute.launcher.Launcher$5.call(Launcher.java:1196)
+ at aQute.launcher.Launcher.run(Launcher.java:278)
+ at aQute.launcher.Launcher.main(Launcher.java:87)
+]]>
+    </error>
+    <system-out>
+      Testedf
+    </system-out>
+  </testcase>
+</testsuite>

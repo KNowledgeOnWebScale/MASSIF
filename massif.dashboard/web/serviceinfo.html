@@ -1,0 +1,81 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>{{ctrl.parent.services.activeService.componentName}}</h2> <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content style="max-width:800px;max-height:810px; ">
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="Info">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Service Summary</h1>
+                        <p>This tab describes a summary of the capabilities of the service. More information can be found in the other tabs.</p>
+                        <h4>Defined filter rules: <span> {{ctrl.parent.services.activeService.filterRules.length}} </span></h4>
+                        <h4>Defined queries: <span> {{ctrl.parent.services.activeService.queries.length}} </span></h4> </md-content>
+                </md-tab>
+                <md-tab label="Input">
+                    <h1 class="md-display-2">Filter Rules</h1> Defined: <span> {{ctrl.parent.services.activeService.filterRules.length}} </span>
+                    <md-content class="md-padding">
+                        <md-list>
+                            <md-list-item style="height: 300px" class="md-3-line" ng-repeat="filter in ctrl.parent.services.activeService.filterRules track by $index">
+                                <div class="md-list-item-text">
+                                   <p>{{filter}}</p>
+                                </div>
+                                <md-button class="md-secondary" ng-click="ctrl.parent.removeFilter(ctrl.parent.services.activeServiceId,filter)">Disable</md-button>
+                                <md-divider ng-if="!$last"></md-divider>
+                            </md-list-item>
+                        </md-list>
+                        <h4>Class Name: <input  type="text" name="className" ng-model="ctrl.parent.services.activeService.newFilter.name"></h4>
+                        <h4>Equivalent To:</h4>
+                        <textarea rows="4" cols="50" ng-model="ctrl.parent.services.activeService.newFilter.filter">Add Filter...</textarea>
+                        <br/>
+                        <button ng-click="ctrl.parent.addFilter(ctrl.parent.services.activeServiceId)">Add Filter!</button>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Queries">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Active Queries</h1>
+                        <p>This tab describes the active queries in the {{ctrl.parent.services.activeService.componentName}} Service. Additional queries can be added at the bottom of the page.</p>
+                        <md-list>
+                            <md-list-item style="height: 300px" class="md-3-line" ng-repeat="query in ctrl.parent.services.activeService.queries track by $index">
+                                <div class="md-list-item-text">
+                                    <textarea cols="80" rows="10" readonly>{{query}}</textarea>
+                                </div>
+                                <md-button class="md-secondary" ng-click="ctrl.parent.removeQuery(ctrl.parent.services.activeServiceId,query)">Disable</md-button>
+                                <md-divider ng-if="!$last"></md-divider>
+                            </md-list-item>
+                            <textarea rows="4" cols="50" ng-model="ctrl.parent.services.activeService.newQuery">Add Query...</textarea>
+                            <br/>
+                            <button ng-click="ctrl.parent.addQuery(ctrl.parent.services.activeServiceId)">Add Query!</button>
+                            <br /> </md-list>
+                        </md-list>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Ontology">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Loaded Ontology</h1>
+                        <p>This tab describes to loaded ontology inside the {{ctrl.parent.services.activeService.componentName}} Service. New concepts can be loaded at the bottom of the page</p>
+                    </md-content>
+                </md-tab>
+            </md-tabs>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button href="https://github.ugent.be/psbonte/MASSIF" target="_blank" md-autofocus> More info </md-button> <span flex></span>
+            <md-button ng-click="ctrl.parent.hide()"> Close </md-button>
+            <!-- <md-button ng-click="answer('useful')" style="margin-right:20px;" >
+        Useful
+      </md-button>--></md-dialog-actions>
+    </form>
+</md-dialog>
+<!--<md-dialog>
+         <md-content>{{ctrl.parent.greeting}}, world !</md-content>
+         <div class="md-actions">
+            <md-button ng-click="ctrl.parent.dialogOpen=false;ctrl.parent.hideDialog()">
+             Close
+            </md-button>
+          </div>
+        </md-dialog>-->

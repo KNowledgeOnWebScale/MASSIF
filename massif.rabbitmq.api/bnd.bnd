@@ -1,0 +1,8 @@
+-baseline: *
+-buildpath: \
+	osgi.annotation;version=6.0.1,\
+	org.semanticweb.owl.owlapi
+Bundle-Version: 1.0.0.${tstamp}
+Export-Package: \
+	massif.rabbitmq.api.messagebus,\
+	massif.rabbitmq.api.messagebus.config

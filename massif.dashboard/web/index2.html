@@ -1,0 +1,41 @@
+<html ng-app="dashboardApp">
+	<head>
+		<title>MASSIF UI</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.js"></script>
+		<!--<script src="todo.js"></script>-->
+		<script src="dashboard.js"></script>
+	</head>
+
+	<body>
+	<h2>Active Services</h2>
+		<div ng-controller="ListServiceController">
+		 <span>{{services.length}} Services</span>
+		 
+   			 <div ng-repeat="(key, service) in services">
+					
+					<span> {{service.componentName}} </span> 
+					<br/>
+					<textarea rows="4" cols="50" ng-model="$parent.services[key].newQuery">Add Query...</textarea>
+					<br/>
+					<span>{{newQuery}}</span>
+					<button ng-click="addQuery(key)">Add Query!</button>
+					<br />
+					<span>{{service.queries.length}} Active Queries</span>
+					<div ng-repeat="query in service.queries">
+						<span>{{query}}</span>
+					</div>
+					<br/>
+					<textarea rows="4" cols="50" ng-model="$parent.services[key].newFilter">Add Filter...</textarea>
+					<br/>
+					<button ng-click="addFilter(key)">Add Filter!</button>
+					<span>{{service.filterRules.length}} Registered Filter Rules</span>
+					<div ng-repeat="filter in service.filterRules">
+						<span>{{filter}}</span>
+					</div>
+							
+			</div>
+   		
+		</div>
+	
+	</body>
+</html>
