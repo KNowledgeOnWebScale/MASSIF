@@ -7,6 +7,7 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.regex.Matcher;
 
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -20,75 +21,69 @@ import org.osgi.service.component.annotations.ReferencePolicy;
 
 import massif.parallelization.api.LocalConfigurator;
 
-
-@Component(immediate=true, property={"service.pid=massif.generic.service.factory.GenericServiceFactory"},
-configurationPolicy=ConfigurationPolicy.REQUIRE)
+@Component(immediate = true, property = {
+		"service.pid=massif.generic.service.factory.GenericServiceFactory" }, configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class GenericServiceFactory {
-	
+
 	private static String DIR = "services";
 	private static String FILE_NAME = "generic.config";
-	private LocalConfigurator localConfig; 
+	private static String SEP = Matcher.quoteReplacement(File.separator);
+	private static String REPLACE = "generated" + SEP + "fw" + SEP + "bundle[0-9]*" + SEP + "data" + SEP;
+	private LocalConfigurator localConfig;
 
-	
 	@Activate
-	public void activate(ComponentContext context){	
-		Dictionary properties = context.getProperties();	
-		System.out.println(properties);
+	public void activate(ComponentContext context) {
+		Dictionary properties = context.getProperties();
+		//Read property file
 		File locationFile = context.getBundleContext().getDataFile(DIR);
 		String location = locationFile.getAbsolutePath().toString();
-		if(locationFile.getAbsolutePath().toString().contains("generated"+File.separator+"fw"+File.separator+"bundle")){
-			location = location.replaceAll("generated"+File.separator+"fw"+File.separator+"bundle[0-9]*"+File.separator+"data"+File.separator, "");
-			System.out.println(location);
+		if (locationFile.getAbsolutePath().toString().contains("generated" + File.separator + "fw" + File.separator + "bundle")) {
+			location = location.replaceAll(REPLACE, "");
 		}
 		location += File.separator + FILE_NAME;
-		System.out.println(location);
 		File readFile = new File(location);
 		Scanner scanner = null;
 		try {
-			scanner = new Scanner( readFile );
+			scanner = new Scanner(readFile);
 			String input = scanner.useDelimiter("\\A").next();
+			//parse file 
 			JSONParser parser = new JSONParser();
 			Object json = parser.parse(input);
-			System.out.println(json);
-			List<Map<String,Object>> jsonList = (List<Map<String,Object>>)json;
-			for(Map<String,Object> jsonItem: jsonList){
-				Dictionary<String, Object> dict = new Hashtable<String,Object>();
+			List<Map<String, Object>> jsonList = (List<Map<String, Object>>) json;
+			for (Map<String, Object> jsonItem : jsonList) {
+				Dictionary<String, Object> dict = new Hashtable<String, Object>();
 				dict.put("name", jsonItem.get("name"));
 				dict.put("description", jsonItem.get("description"));
-				List<Map<String,String>> inputs = (List<Map<String,String>>)jsonItem.get("input");
-				for(int i =0;i<inputs.size();i++){
-					dict.put("input."+i, inputs.get(i).get("input"));
-					dict.put("inputName."+i, inputs.get(i).get("name"));
+				List<Map<String, String>> inputs = (List<Map<String, String>>) jsonItem.get("input");
+				for (int i = 0; i < inputs.size(); i++) {
+					dict.put("input." + i, inputs.get(i).get("input"));
+					dict.put("inputName." + i, inputs.get(i).get("name"));
 				}
 				dict.put("ontology", jsonItem.get("ontology"));
 				List<String> queries = (List<String>) jsonItem.get("query");
-				for(int i = 0; i<queries.size();i++){
-					dict.put("query."+i, queries.get(i));
+				for (int i = 0; i < queries.size(); i++) {
+					dict.put("query." + i, queries.get(i));
 				}
-				//start the new service
+				// start the new service
 				localConfig.startService("massif.generic.service.GenericService", dict);
 			}
-			
-			
-			
+
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
-			
-		}finally{
-			scanner.close(); // Put this call in a finally block
+
+		} finally {
+			scanner.close(); 
 		}
-		
-		
+
 	}
-	
+
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, unbind = "unbindLocalConfig")
 	public void bindLocalConfig(LocalConfigurator localConf) {
 		this.localConfig = localConf;
 	}
 
 	public void unbindLocalConfig(LocalConfigurator localConf) {
-		if(this.localConfig == localConf){
+		if (this.localConfig == localConf) {
 			this.localConfig = null;
 		}
 	}
