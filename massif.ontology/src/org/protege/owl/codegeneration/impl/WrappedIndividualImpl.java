@@ -54,7 +54,7 @@ public class WrappedIndividualImpl implements WrappedIndividual {
 	public WrappedIndividualImpl(OWLOntology owlOntology, IRI iri,
 			CodeGenerationInference inference, ProtegeJavaMapping javaMapping,ContextModelListener decisionEngine) {
 		this(owlOntology, owlOntology.getOWLOntologyManager()
-				.getOWLDataFactory().getOWLNamedIndividual(iri), inference,javaMapping,
+				.getOWLDataFactory().getOWLNamedIndividual(iri.getIRIString()), inference,javaMapping,
 				decisionEngine);
 		
 	}

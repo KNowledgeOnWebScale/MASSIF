@@ -5,7 +5,10 @@
 	org.semanticweb.owl.owlapi,\
 	HermiT,\
 	slf4j.api,\
-	massif.framework.api;version=latest
+	massif.framework.api;version=latest,\
+	com.google.inject,\
+	com.google.inject.assistedinject,\
+	com.google.inject.multibindings
 Bundle-Version: 1.0.0.${tstamp}
 Export-Package: \
 	eu.astute.decision.engine,\

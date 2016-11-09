@@ -24,6 +24,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.Node;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.search.EntitySearcher;
 
 import eu.astute.decision.engine.ContextModelListener;
 
@@ -87,8 +88,7 @@ public class CodeGenerationHelper {
 				}
 			} else {
 				for (OWLOntology imported : owlOntology.getImportsClosure()) {
-					for (OWLIndividual j : i.getObjectPropertyValues(p,
-							imported)) {
+					for (OWLIndividual j : 		EntitySearcher.getObjectPropertyValues(i,p,imported).) {
 						if (!j.isAnonymous()) {
 
 							X x = constructor.newInstance(owlOntology, j

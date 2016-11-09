@@ -36,11 +36,11 @@ public class GenericServiceFactory {
 		System.out.println(properties);
 		File locationFile = context.getBundleContext().getDataFile(DIR);
 		String location = locationFile.getAbsolutePath().toString();
-		if(locationFile.getAbsolutePath().toString().contains("generated/fw/bundle")){
-			location = location.replaceAll("generated/fw/bundle[0-9]*/data/", "");
+		if(locationFile.getAbsolutePath().toString().contains("generated"+File.separator+"fw"+File.separator+"bundle")){
+			location = location.replaceAll("generated"+File.separator+"fw"+File.separator+"bundle[0-9]*"+File.separator+"data"+File.separator, "");
 			System.out.println(location);
 		}
-		location += "/" + FILE_NAME;
+		location += File.separator + FILE_NAME;
 		System.out.println(location);
 		File readFile = new File(location);
 		Scanner scanner = null;

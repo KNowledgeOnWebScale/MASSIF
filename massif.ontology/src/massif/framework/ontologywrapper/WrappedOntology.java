@@ -61,7 +61,7 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 	public WrappedOntology() { }
 	
 	public WrappedOntology(OWLOntology ontology, Class<T> factorytype) {
-		this(ontology, ontology.getOntologyID().getOntologyIRI(), factorytype);
+		this(ontology, ontology.getOntologyID().getOntologyIRI().get(), factorytype);
 	}
 	
 	public WrappedOntology(OWLOntology ontology, IRI iri, Class<T> factorytype) {
@@ -122,7 +122,7 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		this.ontology = manager.createOntology(iri);
 		
 		// extract all direct imported ontologies from the cachedOntology and add them to the new ontology
-		IRI ontIRI = cachedOntology.getOntologyID().getOntologyIRI();
+		IRI ontIRI = cachedOntology.getOntologyID().getOntologyIRI().get();
 		OWLImportsDeclaration id = dataFact.getOWLImportsDeclaration(ontIRI);
 		AddImport ai = new AddImport(ontology, id);
 		manager.applyChange(ai);
@@ -189,9 +189,9 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//create class
-		OWLClass cls = dFact.getOWLClass(IRI.create(classIRI));
+		OWLClass cls = dFact.getOWLClass(classIRI);
 		//create individual
-		OWLIndividual manInd = dFact.getOWLNamedIndividual(IRI.create(individualIRI));
+		OWLIndividual manInd = dFact.getOWLNamedIndividual(individualIRI);
 		//couple class and individual
 		OWLAxiom ax = dFact.getOWLClassAssertionAxiom(cls, manInd);
 		//add it to the ontology
@@ -213,9 +213,9 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//create class
-		OWLClass cls = dFact.getOWLClass(IRI.create(classIRI));
+		OWLClass cls = dFact.getOWLClass(classIRI);
 		//create individual
-		OWLIndividual ind = dFact.getOWLNamedIndividual(IRI.create(individualIRI));
+		OWLIndividual ind = dFact.getOWLNamedIndividual(individualIRI);
 		//couple class and individual
 		OWLAxiom ax = dFact.getOWLClassAssertionAxiom(cls, ind);
 		//add it to the ontology
@@ -238,10 +238,10 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//retrieve individuals
-		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(IRI.create(subjectIRI));
-		OWLIndividual objectInd = dFact.getOWLNamedIndividual(IRI.create(objectIRI));
+		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(subjectIRI);
+		OWLIndividual objectInd = dFact.getOWLNamedIndividual(objectIRI);
 		//retrieve property
-		OWLObjectProperty prop = dFact.getOWLObjectProperty(IRI.create(propertyIRI));
+		OWLObjectProperty prop = dFact.getOWLObjectProperty(propertyIRI);
 		OWLObjectPropertyAssertionAxiom ax = dFact.getOWLObjectPropertyAssertionAxiom(prop, subjectInd, objectInd);
 		//add it to the ontology
 		manager.addAxiom(ontology, ax);
@@ -260,10 +260,10 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//retrieve individuals
-		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(IRI.create(subjectIRI));
-		OWLIndividual objectInd = dFact.getOWLNamedIndividual(IRI.create(objectIRI));
+		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(subjectIRI);
+		OWLIndividual objectInd = dFact.getOWLNamedIndividual(objectIRI);
 		//retrieve property
-		OWLObjectProperty prop = dFact.getOWLObjectProperty(IRI.create(propertyIRI));
+		OWLObjectProperty prop = dFact.getOWLObjectProperty(propertyIRI);
 		OWLObjectPropertyAssertionAxiom ax = dFact.getOWLObjectPropertyAssertionAxiom(prop, subjectInd, objectInd);
 		//add it to the ontology
 		manager.removeAxiom(ontology, ax);
@@ -282,9 +282,9 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//retrieve individuals
-		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(IRI.create(subjectIRI));	
+		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(subjectIRI);	
 		//retrieve property
-		OWLDataProperty prop = dFact.getOWLDataProperty(IRI.create(propertyIRI));
+		OWLDataProperty prop = dFact.getOWLDataProperty(propertyIRI);
 		OWLDataPropertyAssertionAxiom ax = dFact.getOWLDataPropertyAssertionAxiom(prop, subjectInd, literal);
 		//add it to the ontology
 		manager.addAxiom(ontology, ax);
@@ -303,9 +303,9 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//retrieve individuals
-		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(IRI.create(subjectIRI));	
+		OWLIndividual subjectInd = dFact.getOWLNamedIndividual(subjectIRI);	
 		//retrieve property
-		OWLDataProperty prop = dFact.getOWLDataProperty(IRI.create(propertyIRI));
+		OWLDataProperty prop = dFact.getOWLDataProperty(propertyIRI);
 		OWLDataPropertyAssertionAxiom ax = dFact.getOWLDataPropertyAssertionAxiom(prop, subjectInd, literal);
 		//add it to the ontology
 		manager.removeAxiom(ontology, ax);
@@ -322,7 +322,7 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//retrieve individuals
-		OWLNamedIndividual subjectInd = dFact.getOWLNamedIndividual(IRI.create(iri));	
+		OWLNamedIndividual subjectInd = dFact.getOWLNamedIndividual(iri);	
 		
 		return subjectInd;		
 	}
@@ -331,7 +331,7 @@ public class WrappedOntology<T extends AbstractOntologyFactory> {
 		OWLOntologyManager manager = ontology.getOWLOntologyManager();
 		OWLDataFactory dFact = manager.getOWLDataFactory();
 		//create class
-		OWLClass cls = dFact.getOWLClass(IRI.create(classIRI));
+		OWLClass cls = dFact.getOWLClass(classIRI);
 		
 		return cls;
 	}
