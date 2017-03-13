@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1476360907274" name="massif.generic.service" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1478656857495" name="massif.generic.service" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="massif.generic.service"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="0.0.0.201610131215"/>
+      <attribute name="version" type="Version" value="0.0.0.201611090200"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="97411f0f11f6b623ac78518d1147740062afa1c34aa66b94b26cc032e09b2819"/>
+      <attribute name="osgi.content" value="8d56d40ee5aafdebe64ec5a8f14d77e944593d721be4fa298857ca327f43d3b6"/>
       <attribute name="url" value="generated/massif.generic.service.jar"/>
-      <attribute name="size" type="Long" value="27197"/>
+      <attribute name="size" type="Long" value="27361"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="massif.generic.service"/>
-      <attribute name="bundle-version" type="Version" value="0.0.0.201610131215"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201611090200"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="massif.generic.service"/>
-      <attribute name="bundle-version" type="Version" value="0.0.0.201610131215"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201611090200"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" type="List&lt;String&gt;" value="massif.framework.dashboard.api.AdaptableService,massif.mciservice.api.MCIService"/>
@@ -29,7 +29,7 @@
       <directive name="uses" value="massif.mciservice.api,massif.framework.dashboard.api"/>
     </capability>
     <capability namespace="bndtools.workspace">
-      <attribute name="bndtools.workspace" value="file:/media/pbonte/OSDisk/Users/Administrator/GitHub/EclipseWS/MASSIFLinux"/>
+      <attribute name="bndtools.workspace" value="file:/C:/Users/Administrator/GitHub/EclipseWS/MASSIFPublic"/>
       <attribute name="project.path" value="/massif.generic.service"/>
     </capability>
     <requirement namespace="osgi.wiring.package">

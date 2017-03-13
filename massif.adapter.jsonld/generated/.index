@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1476279269013" name="massif.adapter.jsonld" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1478655243549" name="massif.adapter.jsonld" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="massif.adapter.jsonld"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="0.0.0.201610121334"/>
+      <attribute name="version" type="Version" value="0.0.0.201611090134"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="34eab855e42b208c7d5f816508b6bcc6c6865fb4df117d2d5014bdb6d9d7334a"/>
+      <attribute name="osgi.content" value="f053c8bd53f0cfbd77cc00c3bd8a4e83ff78a3c6df66a8c8c9eca0e697166803"/>
       <attribute name="url" value="generated/massif.adapter.jsonld.jar"/>
-      <attribute name="size" type="Long" value="10717"/>
+      <attribute name="size" type="Long" value="10716"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="massif.adapter.jsonld"/>
-      <attribute name="bundle-version" type="Version" value="0.0.0.201610121334"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201611090134"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="massif.adapter.jsonld"/>
-      <attribute name="bundle-version" type="Version" value="0.0.0.201610121334"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201611090134"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" type="List&lt;String&gt;" value="massif.contextadapter.api.ContextAdapter"/>
@@ -29,7 +29,7 @@
       <directive name="uses" value="massif.contextadapter.api"/>
     </capability>
     <capability namespace="bndtools.workspace">
-      <attribute name="bndtools.workspace" value="file:/media/pbonte/OSDisk/Users/Administrator/GitHub/EclipseWS/MASSIFLinux"/>
+      <attribute name="bndtools.workspace" value="file:/C:/Users/Administrator/GitHub/EclipseWS/MASSIFPublic"/>
       <attribute name="project.path" value="/massif.adapter.jsonld"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
